@@ -4,11 +4,10 @@ lazy val root = (project in file("."))
     name := """play-scala-hello-world-tutorial""",
     organization := "com.example",
     version := "1.0-SNAPSHOT",
-    crossScalaVersions := Seq("2.13.12", "3.3.1"),
+    crossScalaVersions := Seq("2.13.12"),
     scalaVersion := crossScalaVersions.value.head,
     libraryDependencies ++= Seq(
       guice,
-       "org.scalatestplus.play" %% "scalatestplus-play" % "6.0.0-RC2" % Test,
        "org.webjars" % "swagger-ui" % "4.17.1",
     ),
     scalacOptions ++= Seq(
